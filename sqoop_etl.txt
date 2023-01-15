@@ -1,0 +1,26 @@
+./sqoop export --connect "jdbc:mysql://server:3306/mydb?useUnicode=true&characterEncoding=utf-8" --username root --password-file /mysql/pwd/mysqlpwd.pwd --table access_log --export-dir /user/hive/warehouse/web_log.db/access_log --input-fields-terminated-by '\001
+
+./sqoop export \
+--connect "jdbc:mysql://server:3306/mydb?useUnicode=true&characterEncoding=utf-8" \
+--username root \
+--password root \
+--table access_log_first \
+--export-dir /user/hive/warehouse/web_log.db/access_log_first \
+--input-fields-terminated-by '\001'
+
+./sqoop export \
+--connect "jdbc:mysql://server:3306/mydb?useUnicode=true&characterEncoding=utf-8" \
+--username root \
+--password root \
+--table access_log_url_top \
+--export-dir /user/hive/warehouse/web_log.db/access_log_url_top \
+--input-fields-terminated-by '\001'
+
+
+./sqoop export \
+--connect "jdbc:mysql://server:3306/mydb?useUnicode=true&characterEncoding=utf-8" \
+--username root \
+--password root \
+--table access_log_ip_black \
+--export-dir /user/hive/warehouse/web_log.db/access_log_ip_black \
+--input-fields-terminated-by '\001'
