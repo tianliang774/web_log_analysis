@@ -1,3 +1,3 @@
-# web_log_analysis
-/h1
-hello guys
+# Web_Log_Analysis
+# File Structure
+# Technology stack
